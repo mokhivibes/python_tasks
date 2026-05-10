@@ -560,144 +560,144 @@
 
 #SariqDevTasks
 
-# daddy = {'name': 'dilshodbek', 'surname': 'usmonov', 'date of birth': '1977'}
-# mummy = {'name': 'zumradxon', 'surname': 'usmonova', 'date of birth': '1981'}
-# sister = {'name': 'mumtozabegim', 'surname': 'mukhammadaliyeva', 'date of birth': '2010'}
-# print(f"Otamning ismi {daddy['name'].title()}, ularning familiyasi {daddy['surname'].title()} va ular {daddy['date of birth']} da tu'gilgan.")
-# print(f"Onamning ismi {mummy['name'].title()}, ularning familiyasi {mummy['surname'].title()} va ular {mummy['date of birth']} da tu'gilgan.")
-# print(f"Singlimning ismi {sister['name'].title()}, uni familiyasi {sister['surname'].title()} va u {sister['date of birth']} da tu'gilgan.")
+daddy = {'name': 'dilshodbek', 'surname': 'usmonov', 'date of birth': '1977'}
+mummy = {'name': 'zumradxon', 'surname': 'usmonova', 'date of birth': '1981'}
+sister = {'name': 'mumtozabegim', 'surname': 'mukhammadaliyeva', 'date of birth': '2010'}
+print(f"Otamning ismi {daddy['name'].title()}, ularning familiyasi {daddy['surname'].title()} va ular {daddy['date of birth']} da tu'gilgan.")
+print(f"Onamning ismi {mummy['name'].title()}, ularning familiyasi {mummy['surname'].title()} va ular {mummy['date of birth']} da tu'gilgan.")
+print(f"Singlimning ismi {sister['name'].title()}, uni familiyasi {sister['surname'].title()} va u {sister['date of birth']} da tu'gilgan.")
 
-# fav_food = {
-#  'daddy': 'napaleon',
-#  'mummy': 'norin',
-#  'sister' :'fast food',
-#  'brother': 'osh',
-#  'old_sister': 'somsa'
-# }
-#
-# print(f"Otamning sevimli taomi bu {fav_food['daddy']}")
-# print(f"Onamning sevimli taomi bu {fav_food['mummy']}")
-# print(f"Katta opamning sevimli taomi bu {fav_food['old_sister']}")
+fav_food = {
+ 'daddy': 'napaleon',
+ 'mummy': 'norin',
+ 'sister' :'fast food',
+ 'brother': 'osh',
+ 'old_sister': 'somsa'
+}
 
-
-# vocab = {
-#  'integer': 'Bu butun sonlar',
-#  'float': 'Bu o\'nlik sonlar',
-#  'string': 'Bu esa matn',
-#  'if': 'Bu biror bir shart'
-# }
-#
-# while True:
-#  kalit_soz = input('Kalit so\'z kiriting (chiqish uchun "q" harfini yozing): ')
-#  if kalit_soz == 'q':
-#   break
-#  elif kalit_soz in vocab:
-#   print(vocab[kalit_soz])
-#  else:
-#   print('Bunday so\'z mavjud emas')
-# print('Yana kutamiz!')
-#
-# vocab = {
-#  'integer': 'Bu butun sonlar',
-#  'float': 'Bu o\'nlik sonlar',
-#  'string': 'Bu esa matn',
-#  'if': 'Bu biror bir shart',
-#  'boolean': 'Mantiqiy qiymat',
-#  'max.()': 'Maksimum qiymat',
-#  'min.()': 'Minimum qiymat',
-#  '.upper()':'Barcha harflarni katta harfga o\'zgartiradi',
-#  '.capitalize()':'So\'zlarni bosh haqrfini katta harflargaa o\'zgartiradi'
-# }
-#
-# for key, value in vocab.items():
-#     print(f"{key.title()} - {value}")
-
-# countries = {
-#  'aqsh': 'washingnton d.c',
-#  'italiya': 'rim',
-#  'malayziya': 'kuala-lumpur',
-#  'o\'zbekiston': 'toshkent',
-#  'qirg\'iziston': 'bishkek',
-#  'qozog\'iston': 'dushanbe',
-#  'rossiya':'moskva',
-#  'singapur': 'sungapur',
-#  'tojikiston': 'nursulton'
-# }
-
-# print('Dunyo davlatlari:')
-# for davlatlar in sorted(countries):
-#  print(davlatlar.title())
-#
-# print('Davlatlarning poytaxtlari:')
-# for poytaxtlar in sorted(countries.values()):
-#  print(poytaxtlar.title())
-
-# country = input("What is your country? ")
-# if country in countries:
-#  print(f"{country.title()}ning poytaxti bu {countries[country].title()}.")
-# else:
-#  print("We don\'t have enough information about this country!")
+print(f"Otamning sevimli taomi bu {fav_food['daddy']}")
+print(f"Onamning sevimli taomi bu {fav_food['mummy']}")
+print(f"Katta opamning sevimli taomi bu {fav_food['old_sister']}")
 
 
-# menu = {
-#  'lavash': 35000,
-#  'burger': 30000,
-#  'donar': 40000,
-#  'spagetti': 43000,
-#  'set': 50000,
-#  'pizza': 55000,
-#  'sendwich': 28000,
-#  'somsa': 6000,
-#  'strips': 25000,
-#  'naggets': 18000
-# }
-#
-#
-# print('3 ta taom buyurtma bering.')
-# taom1 = input('1-taom: ')
-# taom2 = input('2-taom: ')
-# taom3 = input('3-taom: ')
-# if taom1 in menu:
-#  print(f"{taom1.title()}ning narxi: {menu[taom1]}")
-# else:
-#  print(f"Kechirasiz, bizda {taom1} yo\'q")
-# if taom2 in menu:
-#  print(f"{taom2.title()}ning narxi: {menu[taom2]}")
-# else:
-#  print(f"Kechirasiz, bizda {taom3} yo\'q")
-# if taom3 in menu:
-#  print(f"{taom3.title()}ning narxi: {menu[taom3]}")
-# else:
-#  print(f"Kechirasiz, bizda {taom3} yo\'q")
+vocab = {
+ 'integer': 'Bu butun sonlar',
+ 'float': 'Bu o\'nlik sonlar',
+ 'string': 'Bu esa matn',
+ 'if': 'Bu biror bir shart'
+}
 
-#
-# shaxs1 = {
-#     'ism': 'Abu Abdulloh Muhammad ibn Ismoil',
-#     "t_yil": 810,
-#      'umr': 60,
-#      'asarlari': ['Al-jome\' as-sahih', 'Al-adab al-mufrad', 'At-tarix al-kabir']
-# }
-# shaxs2 = {
-#     'ism': 'Alisher Navoiy',
-#     "t_yil": 1441,
-#      'umr': 60,
-#      'asarlari': ['Muhokamat-ul-lug\'otayn', 'Xamsa', 'G\'azallar']
-# }
-# shaxs3 = {
-#     'ism': 'Zahiriddin Muhammad Bobur',
-#     "t_yil": 1483,
-#      'umr': 47,
-#     'asarlari': ['Boburnoma', 'Harb ishi', 'Mubayyan']
-# }
-#
-# shaxslar = [shaxs1, shaxs2, shaxs3]
-# for shaxs in shaxslar:
-#     print(f"{shaxs['ism']}  {shaxs['t_yil']} yilda tavallud topgan. {shaxs['umr']} yil umr ko\'rgan.")
-#
-# for shaxs in shaxslar:
-#     print(f"\n{shaxs['ism']} ning mashxur asarlari:")
-#     for asar in shaxs['asarlari']:
-#         print(asar)
+while True:
+ kalit_soz = input('Kalit so\'z kiriting (chiqish uchun "q" harfini yozing): ')
+ if kalit_soz == 'q':
+  break
+ elif kalit_soz in vocab:
+  print(vocab[kalit_soz])
+ else:
+  print('Bunday so\'z mavjud emas')
+print('Yana kutamiz!')
+
+vocab = {
+ 'integer': 'Bu butun sonlar',
+ 'float': 'Bu o\'nlik sonlar',
+ 'string': 'Bu esa matn',
+ 'if': 'Bu biror bir shart',
+ 'boolean': 'Mantiqiy qiymat',
+ 'max.()': 'Maksimum qiymat',
+ 'min.()': 'Minimum qiymat',
+ '.upper()':'Barcha harflarni katta harfga o\'zgartiradi',
+ '.capitalize()':'So\'zlarni bosh haqrfini katta harflargaa o\'zgartiradi'
+}
+
+for key, value in vocab.items():
+    print(f"{key.title()} - {value}")
+
+countries = {
+ 'aqsh': 'washingnton d.c',
+ 'italiya': 'rim',
+ 'malayziya': 'kuala-lumpur',
+ 'o\'zbekiston': 'toshkent',
+ 'qirg\'iziston': 'bishkek',
+ 'qozog\'iston': 'dushanbe',
+ 'rossiya':'moskva',
+ 'singapur': 'sungapur',
+ 'tojikiston': 'nursulton'
+}
+
+print('Dunyo davlatlari:')
+for davlatlar in sorted(countries):
+ print(davlatlar.title())
+
+print('Davlatlarning poytaxtlari:')
+for poytaxtlar in sorted(countries.values()):
+ print(poytaxtlar.title())
+
+country = input("What is your country? ")
+if country in countries:
+ print(f"{country.title()}ning poytaxti bu {countries[country].title()}.")
+else:
+ print("We don\'t have enough information about this country!")
+
+
+menu = {
+ 'lavash': 35000,
+ 'burger': 30000,
+ 'donar': 40000,
+ 'spagetti': 43000,
+ 'set': 50000,
+ 'pizza': 55000,
+ 'sendwich': 28000,
+ 'somsa': 6000,
+ 'strips': 25000,
+ 'naggets': 18000
+}
+
+
+print('3 ta taom buyurtma bering.')
+taom1 = input('1-taom: ')
+taom2 = input('2-taom: ')
+taom3 = input('3-taom: ')
+if taom1 in menu:
+ print(f"{taom1.title()}ning narxi: {menu[taom1]}")
+else:
+ print(f"Kechirasiz, bizda {taom1} yo\'q")
+if taom2 in menu:
+ print(f"{taom2.title()}ning narxi: {menu[taom2]}")
+else:
+ print(f"Kechirasiz, bizda {taom3} yo\'q")
+if taom3 in menu:
+ print(f"{taom3.title()}ning narxi: {menu[taom3]}")
+else:
+ print(f"Kechirasiz, bizda {taom3} yo\'q")
+
+
+shaxs1 = {
+    'ism': 'Abu Abdulloh Muhammad ibn Ismoil',
+    "t_yil": 810,
+     'umr': 60,
+     'asarlari': ['Al-jome\' as-sahih', 'Al-adab al-mufrad', 'At-tarix al-kabir']
+}
+shaxs2 = {
+    'ism': 'Alisher Navoiy',
+    "t_yil": 1441,
+     'umr': 60,
+     'asarlari': ['Muhokamat-ul-lug\'otayn', 'Xamsa', 'G\'azallar']
+}
+shaxs3 = {
+    'ism': 'Zahiriddin Muhammad Bobur',
+    "t_yil": 1483,
+     'umr': 47,
+    'asarlari': ['Boburnoma', 'Harb ishi', 'Mubayyan']
+}
+
+shaxslar = [shaxs1, shaxs2, shaxs3]
+for shaxs in shaxslar:
+    print(f"{shaxs['ism']}  {shaxs['t_yil']} yilda tavallud topgan. {shaxs['umr']} yil umr ko\'rgan.")
+
+for shaxs in shaxslar:
+    print(f"\n{shaxs['ism']} ning mashxur asarlari:")
+    for asar in shaxs['asarlari']:
+        print(asar)
 
 
 countries = {
@@ -710,12 +710,12 @@ countries = {
     'Malayziya':
         {'poytaxti':'Kuala-Lumpur', 'hududi': 329750, 'aholi': 25000000, 'pul': 'ringgit' }
 }
-#
-# for country in countries:
-#     print(f"\n{country}ning poytaxti {countries[country]['poytaxti']}")
-#     print(f"Hududi: {countries[country]['hududi']} kv.km")
-#     print(f"Aholisi: {countries[country]['aholi']}")
-#     print(f"Pul birligi: {countries[country]['pul']}")
+
+for country in countries:
+    print(f"\n{country}ning poytaxti {countries[country]['poytaxti']}")
+    print(f"Hududi: {countries[country]['hududi']} kv.km")
+    print(f"Aholisi: {countries[country]['aholi']}")
+    print(f"Pul birligi: {countries[country]['pul']}")
 
 davlat = input('Davlat nomini kiriting: ')
 davlat = davlat.capitalize()
