@@ -356,14 +356,121 @@
 #
 
 
-name= input("What is your first name? ")
-def about_user(name_user, age_user, ):
-    """This gives info about username and age"""
+# name= input("What is your first name? ")
+# def about_user(name_user, age_user, ):
+#     """This gives info about username and age"""
+#
+#     current_year = input("What is current year? ")
+#     current_year = int(current_year)
+#     birth_year = input("What is your birth year? ")
+#     age_user = current_year - int(birth_year)
+#     return f"{name_user} is {age_user} years old."
+# print(about_user(name))
 
-    current_year = input("What is current year? ")
-    current_year = int(current_year)
-    birth_year = input("What is your birth year? ")
-    age_user = current_year - int(birth_year)
-    return f"{name_user} is {age_user} years old."
-print(about_user(name))
+
+#SariqDevTasks
+# ism = input("Ismingiz nima? ")
+# def salom_ber(ism):
+#     """Foydalanuvchidan ismini so'rab, unga ismi bilan murojaat qiladi"""
+#
+#     print(f"Assalomu alaykum, {ism.title()}! Sizga qanday yordam bera olaman?")
+# salom_ber(ism)
+
+# name = input('What is your name? ')
+# age = input('What is your age? ')
+# age = int(age)
+# def get_user_info(name, age, current_year = 2026):
+#       """Calculates the year of birth of the user"""
+#     print(f"{name.title()}, you're born in {current_year - age}!")
+#
+# get_user_info(name, age)
+
+# number = input('Think about a number: ')
+# def calculate_cube_square(number):
+#     """Calculate the cube square of a number"""
+#     print(f"The square of {number} is {int(number)**2} and the cube of {number} is {int(number) ** 3}")
+# calculate_cube_square(number)
+#
+# number = input('Think about a number: ')
+# def find_even_odd(number):
+#     """Find if the number odd or even"""
+#     if int(number) % 2 == 0:
+#         print(f"{number} is even!")
+#     else:
+#         print(f"{number} is odd!")
+# find_even_odd(number)
+
+# number1 = input('Type the first number: ')
+# number2 = input('Type the second number: ')
+# def find_big_small(number1, number2):
+#     if number1 > number2:
+#         print(f"{number1} is big!")
+#     elif number1 < number2:
+#         print(f"{number2} is big!")
+#     elif number1 == number2:
+#         print(f"{number1} and {number2} are equal!")
+# find_big_small(number1, number2)
+
+# x = input('Insert a number: ')
+# y = input('Insert a number: ')
+# def square_number(x,y):
+#     """Calculates the square root of a number"""
+#     print(int(x)**int(y))
+#
+# square_number(x,y)
+
+# x = input('Insert a number: ')
+# def square_number(x,y=2):
+#     """Calculates the square root of a number"""
+#     print(int(x)**(y))
+#
+# square_number(x)
+
+# number = input('Insert a number: ')
+# def bolinish_alomatlari(number):
+#     """Bolinish alomatlarini hisoblab beradi"""
+#     for i in range(2, 11):
+#         if int(number) % i == 0:
+#             print(f"{number} {i} ga qoldiqsiz bo'linadi!")
+#         else:
+#             print(f"{number} {i} ga qoldiqli bo'linadi!")
+#
+# bolinish_alomatlari(number)
+clients = []
+
+
+def get_user_info(first_name, last_name, dob, city, age, email = "", phone = None):
+            """Gets info about user"""
+            user_info = {
+                        "first_name": first_name.title(),
+                        "last_name": last_name.title(),
+                        "dob": dob,
+                        "city": city.title(),
+                        "email": email,
+                        "phone": phone,
+                        "age": age
+                    }
+
+            clients.append(user_info)
+            return clients
+
+while True:
+    first_name = input("What's your first name? ")
+    last_name = input("What's your last name? ")
+    dob = input("What's your date of birth? ")
+    city = input("What's your city? ")
+    email = input("What's your email address? ")
+    phone = input("What's your phone number? ")
+    age = 2026 - int(dob)
+    get_user_info(first_name, last_name, dob, city, age, email, phone)
+    repeat = input("Would you like to add another user? (y/n) ? ")
+    if repeat == "n":
+        break
+
+print(clients)
+
+
+
+#SariqDevTasks End
+
 #NEW CHAPTER FUNCTIONS END
