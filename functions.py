@@ -436,41 +436,225 @@
 #             print(f"{number} {i} ga qoldiqli bo'linadi!")
 #
 # bolinish_alomatlari(number)
-clients = []
+# clients = []
+#
+#
+# def get_user_info(first_name, last_name, dob, city, age, email = "", phone = None):
+#             """Gets info about user"""
+#             user_info = {
+#                         "first_name": first_name.title(),
+#                         "last_name": last_name.title(),
+#                         "dob": dob,
+#                         "city": city.title(),
+#                         "email": email,
+#                         "phone": phone,
+#                         "age": age
+#                     }
+#
+#             clients.append(user_info)
+#             return clients
+#
+# while True:
+#     first_name = input("What's your first name? ")
+#     last_name = input("What's your last name? ")
+#     dob = input("What's your date of birth? ")
+#     city = input("What's your city? ")
+#     email = input("What's your email address? ")
+#     phone = input("What's your phone number? ")
+#     age = 2026 - int(dob)
+#     get_user_info(first_name, last_name, dob, city, age, email, phone)
+#     repeat = input("Would you like to add another user? (y/n) ? ")
+#     if repeat == "n":
+#         break
+#
+# print(clients)
 
 
-def get_user_info(first_name, last_name, dob, city, age, email = "", phone = None):
-            """Gets info about user"""
-            user_info = {
-                        "first_name": first_name.title(),
-                        "last_name": last_name.title(),
-                        "dob": dob,
-                        "city": city.title(),
-                        "email": email,
-                        "phone": phone,
-                        "age": age
-                    }
+# def find_max(numbers):
+#     return(max(numbers))
+#
+#
+#
+# numbers = []
+# count = 0
+# while count < 3:
+#     count += 1
+#     number = input("Insert a number: ")
+#     number = int(number)
+#     numbers.append(number)
+#
+# max_number = find_max(numbers)
+# print(max_number)
 
-            clients.append(user_info)
-            return clients
-
-while True:
-    first_name = input("What's your first name? ")
-    last_name = input("What's your last name? ")
-    dob = input("What's your date of birth? ")
-    city = input("What's your city? ")
-    email = input("What's your email address? ")
-    phone = input("What's your phone number? ")
-    age = 2026 - int(dob)
-    get_user_info(first_name, last_name, dob, city, age, email, phone)
-    repeat = input("Would you like to add another user? (y/n) ? ")
-    if repeat == "n":
-        break
-
-print(clients)
+# results = {}
+# def def_circle(radius):
+#     results['radius'] = radius
+#     results['diameter'] = radius * 2
+#     results['perimeter'] = 2 * 3.14159 * radius
+#     results['area'] = 3.14159 * radius**2
+#
+#     return results
+#
+#
+#
+# radius = input("Insert radius: ")
+# radius = int(radius)
+# circle = def_circle(radius)
+# print(circle)
 
 
+# prime_numbers = []
+# def prime_number(start, end):
+#     for number in range(start, end):
+#         number = int(number)
+#         for i in range(2, number):
+#             if number % i == 0:
+#                 break
+#         else:
+#             prime_numbers.append(number)
+#     return prime_numbers
+# top = prime_number(2, 98)
+# print(top)
+
+
+# number = input('Insert number: ')
+# number = int(number)
+# fibonacci_list = [1,1]
+# def fibonacci(n):
+#     for i in range(n-2):
+#      next_sum = (fibonacci_list[-1]) + (fibonacci_list[-2])
+#      fibonacci_list.append(next_sum)
+#     return fibonacci_list
+# formula_fibonacci = fibonacci(number)
+# print(formula_fibonacci)
+
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+#
+# def katta_harf(ismlar):
+#         for i in range(len(ismlar)):
+#             ismlar[i] = ismlar[i].capitalize()
+#
+#         return ismlar
+#
+# capitals = katta_harf(ismlar)
+# print(capitals)
+
+
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# def katta_harf(ismlar):
+#     katta_harflar = []
+#     for ism in ismlar:
+#         capital = ism.capitalize()
+#         katta_harflar.append(capital)
+#     return katta_harflar
+#
+# capitals = katta_harf(ismlar)
+# print(capitals)
+# print(ismlar)
+
+# ismlar = ['ali', 'vali', 'hasan', 'husan']
+# def bahola(ismlar):
+#     jurnal = {}
+#     for ism in ismlar:
+#         savol = (f"{ism.title()}ning bahosini kiriting: ")
+#         baho = input(savol)
+#         jurnal[ism.title()] = int(baho)
+#
+#     return jurnal
+#
+# baholash = bahola(ismlar[:])
+# print(baholash)
 
 #SariqDevTasks End
 
+#pythoncrashcourse_passinglist
+
+# magicians = ['alice', 'bob', 'george', 'john']
+# def show_magician(magicians):
+#     for magician in magicians:
+#         print(magician.title())
+# show_magician(magicians)
+
+# def make_great(magicians):
+#     for i in range(len(magicians)):
+#         magicians[i] = "The Great " + magicians[i].title()
+#     print(magicians)
+# make_great(magicians)
+# show_magician(magicians)
+
+
+
+# def make_great(magicians):
+#     copy_magicians = magicians[:]
+#     for i in range(len(copy_magicians)):
+#         copy_magicians[i] = "The Great " + copy_magicians[i].title()
+#     return (copy_magicians)
+#
+# great_magicians = make_great(magicians)
+# print(great_magicians)
+# show_magician(magicians)
+
+
+
+
+
+
+#pythoncrashcourse_passinglist end
+
+
+
+#Sariqdev tasks *args & **kwargs
+
+# def multiplication(*numbers):
+#     answer = 1
+#     for i in numbers:
+#         answer = answer * i
+#     return answer
+# multiply = multiplication(1,4,8,4,5)
+# print(multiply)
+
+# def talabalar(ism, familiya, **malumotlar):
+#     """Talaba haqida ma'lumot beruvchi funksiya"""
+#     talaba_info = {}
+#     talaba_info['ism'] = ism
+#     talaba_info['familiya'] = familiya
+#     talaba_info['malumotlar'] = malumotlar
+#     return talaba_info
+# talaba1 = talabalar('Dilshodbek', 'Usmonov', yili=2001, shahri = 'Toshkent', kontrakti = 12000000)
+# print(talaba1)
+
+#Sariqdev tasks *args & **kwargs end
+
+
+#Pythoncrashcourse tasks *args & **kwargs
+
+# def get_order(*taste):
+#     for item in taste:
+#      print(f"You ordered {item} sandwich!")
+# get_order('fish', 'butter', 'uzbek', 'diet')
+# get_order('lemon', 'fruit', 'jam')
+# get_order('banana')
+
+# def build_profile(first_name, last_name, **other_infos):
+#     """This creates user profile"""
+#     user_profile = {}
+#     user_profile['first_name'] = first_name.title()
+#     user_profile['last_name'] = last_name.title()
+#     for key, value in other_infos.items():
+#         user_profile[key] = value
+#     print(user_profile)
+# build_profile('john', 'dep', age = 23, education = "bachelors",height= 1.78 )
+
+def get_car_info(manufacturer, model, **other_infos):
+    car = {}
+    car['manufacturer'] = manufacturer
+    car['model'] = model
+    for key, value in other_infos.items():
+        car[key] = value
+    return car
+car = get_car_info('subaru','outback', year = 2020, color = 'black')
+print(car)
+
+
+#Pythoncrashcourse tasks *args & **kwargs end
 #NEW CHAPTER FUNCTIONS END
