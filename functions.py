@@ -645,15 +645,111 @@
 #     print(user_profile)
 # build_profile('john', 'dep', age = 23, education = "bachelors",height= 1.78 )
 
-def get_car_info(manufacturer, model, **other_infos):
-    car = {}
-    car['manufacturer'] = manufacturer
-    car['model'] = model
-    for key, value in other_infos.items():
-        car[key] = value
-    return car
-car = get_car_info('subaru','outback', year = 2020, color = 'black')
-print(car)
+# def get_car_info(manufacturer, model, **other_infos):
+#     car = {}
+#     car['manufacturer'] = manufacturer
+#     car['model'] = model
+#     for key, value in other_infos.items():
+#         car[key] = value
+#     return car
+# car = get_car_info('subaru','outback', year = 2020, color = 'black')
+# print(car)
+
+#Moduls
+#theory
+#MODULNI CHAQIRIB OLISH
+#Modul ichidagi istalgan funksiyaga murojat qilish uchun
+# import modul_nomi komandasidan foydalanamiz.
+# Bunda modul ichidagi istalgan funksiyaga
+# modul_nomi.funksiya_nomi() ko'rinishida murojat qilishimiz mumkin.
+# Ya'ni avval modul nomi undan keyin esa nuqta qo'yilib,
+# modul ichidagi funksiya nomi yoziladi.
+
+#MODULGA QISQA NOM BERISH:
+# Yuqoridagi usul bilan modulni chaqirib olishda fayl nomi
+# uzun bo'lsa bu o'ziga yarasha noqulayliklar tug'dirishi mumkin.
+# Buning oldini olish uchun esa, modulni chaqirganda
+# unga as operatori yordamida qisqa nom berishimiz,
+# va modulga qisqa nom orqali murojat qilish mumkin.
+
+#MODUL ICIHDAN MA'LUM FUNKSIYALARNI KO'CHIRIB OLISH:
+# Agar katta modullardan faqatgina ba'zi funksiyalarga
+# murojat qilish talab qilinisa, kerakli funksiyalarni
+# from modul_nomi import funksiya1, funksiya2 komandasi
+# yordamida o'zimizning dasturimizga ko'chirib olishimiz mumkin.
+# Bu usulning qulayligi, endi funksiyalarga to'g'ridan-to'g'ri
+# murojat qilish mumkin (modul ismini yozmagan holda).
+
+#MODUL ICHIDAGI BARCHA FUNKSIYALARNI KO'CHIRIB OLISH:
+# Modul ichidagi barcha funksiyalarni asosiy dasturga
+# ko'chirib olish uchun from modul_nomi import * komandasidan foydalanamiz.
+
+
+#MODULDA O'ZGARUVCHI SAQLASH:
+# Modullarning ichida nafaqat funksiyalar,
+# balki turli o'zgaruvchilarni ham saqlash mumkin.
+# Modul ichidagi o'zgaruvchilarga ham huddi yuqoridagi
+# usullar bilan murojat qilish mumkin.
+
+
+# import getsinfo
+# car = getsinfo.get_car_info('subaru','outback', year = 2020, color = 'black')
+# print(car)
+
+# from getsinfo import get_car_info
+# car = get_car_info('subaru','outback', year = 2020, color = 'black')
+# print(car)
+
+# import getsinfo as gi
+# car = gi.get_car_info('subaru','outback', year = 2020, color = 'black')
+# print(car)
+
+# from getsinfo import get_car_info as gci
+# car = gci('subaru','outback', year = 2020, color = 'black')
+# print(car)
+
+import platform
+print(platform.system())
+
+
+
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+#A reference of all the legal format codes(datetime module):
+
+# %a	Weekday, short version	Wed
+# %A	Weekday, full version	Wednesday
+# %w	Weekday as a number 0-6, 0 is Sunday	3
+# %d	Day of month 01-31	31
+# %b	Month name, short version	Dec
+# %B	Month name, full version	December
+# %m	Month as a number 01-12	12
+# %y	Year, short version, without century	18
+# %Y	Year, full version	2018
+# %H	Hour 00-23	17
+# %I	Hour 00-12	05
+# %p	AM/PM	PM
+# %M	Minute 00-59	41
+# %S	Second 00-59	08
+# %f	Microsecond 000000-999999	548513
+# %z	UTC offset	+0100
+# %Z	Timezone	CST
+# %j	Day number of year 001-366	365
+# %U	Week number of year, Sunday as the first day of week, 00-53	52
+# %W	Week number of year, Monday as the first day of week, 00-53	52
+# %c	Local version of date and time	Mon Dec 31 17:41:00 2018
+# %C	Century	20
+# %x	Local version of date	12/31/18
+# %X	Local version of time	17:41:00
+# %%	A % character	%
+# %G	ISO 8601 year	2018
+# %u	ISO 8601 weekday (1-7)	1
+# %V	ISO 8601 weeknumber (01-53)	01
+
+#Moduls end
+
 
 
 #Pythoncrashcourse tasks *args & **kwargs end
